@@ -39,7 +39,11 @@ The following Apps are available:
 - moods
 
 
-## Usage ##
+## Build & Run ##
+
+Can be installed natively or via Docker.
+
+### Native ###
 
 1. Install [Node.js](http://nodejs.org/).
 
@@ -47,6 +51,20 @@ The following Apps are available:
 
 		node index.js
 
-3. Open web browser on [http://localhost](http://localhost) to view available APIs.
+### Docker ###
 
-4. Call any of the APIs from your application, eg. [http://localhost/cgi-bin/status](http://localhost/cgi-bin/status)
+1. Install Docker
+
+2. Build:
+
+		docker build -t openkarotz-emulator .
+
+3. Run:
+
+		docker run -p 80:80 -it openkarotz-emulator
+
+## Usage ##
+
+1. Open web browser on [http://localhost](http://localhost) to view available APIs.
+
+2. Call any of the APIs from your application, eg. [http://localhost/cgi-bin/status](http://localhost/cgi-bin/status)
